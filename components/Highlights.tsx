@@ -56,7 +56,7 @@ export default function Highlights() {
       <SectionHeader
         step="01"
         tag="CAPABILITIES"
-        title="Core Competencies & Superpowers"
+        title="Core Competencies & Expertise"
         subtitle="Modern Architectures Built for Scale"
       />
 

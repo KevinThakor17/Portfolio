@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <SpotlightCard
       id="contact"
-      className="rounded-3xl p-8 sm:p-14 text-center space-y-7 relative overflow-hidden border-cyan-500/30"
+      className="rounded-3xl p-6 sm:p-14 text-center space-y-7 relative overflow-hidden border-cyan-500/30"
     >
       <div className="absolute -top-28 -right-28 w-60 h-60 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-28 -left-28 w-60 h-60 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none" />
@@ -26,10 +26,10 @@ export default function Contact() {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex flex-wrap items-center justify-center gap-4 pt-3">
+      <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-3">
         <a
           href={`mailto:${PERSONAL_INFO.email}`}
-          className="px-6 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/25 transition-all transform hover:-translate-y-1 flex items-center gap-2.5"
+          className="px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-xs sm:text-sm shadow-xl shadow-cyan-500/25 transition-all transform hover:-translate-y-1 flex items-center gap-2.5 max-w-full truncate"
         >
           <svg
             className="w-4 h-4 flex-shrink-0"
@@ -44,14 +44,14 @@ export default function Contact() {
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             />
           </svg>
-          <span>{PERSONAL_INFO.email}</span>
+          <span className="truncate">{PERSONAL_INFO.email}</span>
         </a>
 
         <a
           href={PERSONAL_INFO.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-4 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-white font-semibold text-sm border border-slate-700 transition-all flex items-center gap-2.5 transform hover:-translate-y-1"
+          className="px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-white font-semibold text-xs sm:text-sm border border-slate-700 transition-all flex items-center gap-2.5 transform hover:-translate-y-1"
         >
           <svg
             className="w-4 h-4 text-[#0a66c2] flex-shrink-0"

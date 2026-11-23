@@ -15,7 +15,7 @@ export default function ArchitectureDiagram() {
       />
 
       {/* Case Study 1: Decoupled Headless Platform with Animated SVG Diagram */}
-      <SpotlightCard className="rounded-3xl p-6 sm:p-9 space-y-8">
+      <SpotlightCard className="rounded-3xl p-4 sm:p-9 space-y-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/25">
@@ -256,7 +256,7 @@ export default function ArchitectureDiagram() {
       </SpotlightCard>
 
       {/* Case Study 2: Interactive Dynamic Calculator & Learning Platform */}
-      <SpotlightCard className="rounded-3xl p-6 sm:p-9 space-y-6">
+      <SpotlightCard className="rounded-3xl p-4 sm:p-9 space-y-6">
         <div className="space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-300 border border-emerald-500/25">
             <span>⚡</span> Interactive Application Architecture

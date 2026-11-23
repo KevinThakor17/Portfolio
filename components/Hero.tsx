@@ -11,9 +11,6 @@ export default function Hero() {
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Animated Counter for Years of Exp
-  const [yearsCount, setYearsCount] = useState(0);
-
   const words = PERSONAL_INFO.typewriterRoles;
 
   // Typewriter Loop
@@ -42,25 +39,6 @@ export default function Hero() {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, wordIndex, words]);
-
-  // Animated Numbers on Mount
-  useEffect(() => {
-    let yearTimer: NodeJS.Timeout;
-
-    let y = 0;
-    yearTimer = setInterval(() => {
-      y += 1;
-      if (y <= 3) {
-        setYearsCount(y);
-      } else {
-        clearInterval(yearTimer);
-      }
-    }, 150);
-
-    return () => {
-      clearInterval(yearTimer);
-    };
-  }, []);
 
   return (
     <section id="about" className="pt-6 sm:pt-14 relative">
@@ -116,7 +94,7 @@ export default function Hero() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 max-w-lg mx-auto md:mx-0">
             <div className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 text-center md:text-left">
               <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono">
-                {yearsCount}+
+                {PERSONAL_INFO.experienceYears}
               </div>
               <div className="text-[11px] font-medium text-slate-400 tracking-wider uppercase mt-1">
                 Years Production Exp

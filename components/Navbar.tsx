@@ -16,21 +16,21 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-5 z-50 transition-all duration-300">
-      <nav className="spotlight-card rounded-2xl px-5 py-3.5 flex items-center justify-between shadow-2xl backdrop-blur-xl border-slate-800">
+    <header className="sticky top-3 sm:top-5 z-50 transition-all duration-300">
+      <nav className="spotlight-card rounded-2xl px-3.5 sm:px-5 py-2.5 sm:py-3.5 flex items-center justify-between shadow-2xl backdrop-blur-xl border-slate-800">
         {/* Brand / Logo */}
-        <a href="#about" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 flex items-center justify-center font-extrabold text-white shadow-lg shadow-cyan-500/25 group-hover:scale-105 transition-transform duration-300">
+        <a href="#about" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 flex items-center justify-center font-extrabold text-white shadow-lg shadow-cyan-500/25 group-hover:scale-105 transition-transform duration-300 flex-shrink-0 text-sm">
             KT
           </div>
-          <div>
+          <div className="min-w-0">
             <div className="flex items-center gap-1.5">
-              <span className="font-bold text-white tracking-tight text-sm">
+              <span className="font-bold text-white tracking-tight text-xs sm:text-sm truncate">
                 {PERSONAL_INFO.name}
               </span>
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0" />
             </div>
-            <span className="block text-[11px] text-cyan-400 font-mono">
+            <span className="block text-[10px] sm:text-[11px] text-cyan-400 font-mono truncate">
               GCP Certified • Software Eng
             </span>
           </div>
@@ -60,7 +60,7 @@ export default function Navbar() {
           </div>
           <a
             href={`mailto:${PERSONAL_INFO.email}`}
-            className="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 transition-all shadow-md shadow-cyan-500/25 transform hover:-translate-y-0.5"
+            className="whitespace-nowrap px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-[11px] sm:text-xs font-bold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 transition-all shadow-md shadow-cyan-500/25 transform hover:-translate-y-0.5 flex-shrink-0"
           >
             Let&apos;s Talk
           </a>

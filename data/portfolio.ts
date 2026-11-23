@@ -8,7 +8,6 @@ export interface PersonalInfo {
   location: string;
   email: string;
   linkedin: string;
-  bio: string;
   typewriterRoles: string[];
 }
 
@@ -21,21 +20,11 @@ export interface Capability {
   accentColor: "cyan" | "indigo" | "emerald";
 }
 
-export interface CaseStudy {
-  id: string;
-  tag: string;
-  title: string;
-  description: string;
-  bullets: { label: string; text: string }[];
-  tags: string[];
-}
-
 export interface Skill {
   name: string;
   category: ("cloud" | "backend" | "frontend" | "tools")[];
   detail: string;
-  source: string;
-  color: string;
+  dotColor: "cyan" | "emerald" | "indigo" | "blue" | "amber" | "purple";
 }
 
 export interface ExperienceItem {
@@ -66,7 +55,6 @@ export const PERSONAL_INFO: PersonalInfo = {
   location: "Valsad, Gujarat, India",
   email: "kevinthakor2000@gmail.com",
   linkedin: "https://www.linkedin.com/in/kevinthakor17",
-  bio: "Software Engineer with ~3 years architecting decoupled multisite platforms, interactive state engines, and production APIs. Gradually evolving towards Python, FastAPI, BigQuery, and Cloud Data Engineering to build scalable, high-impact systems.",
   typewriterRoles: [
     "Software Engineer",
     "GCP Certified Cloud Engineer",
@@ -112,50 +100,43 @@ export const SKILLS_DATA: Skill[] = [
     name: "Google Cloud Platform (GCP)",
     category: ["cloud"],
     detail: "Associate Cloud Certified",
-    source: "IT IDOL Technologies",
-    color: "bg-cyan-400",
+    dotColor: "cyan",
   },
   {
     name: "Google BigQuery",
     category: ["cloud"],
     detail: "SQL & Large-Scale Analytics",
-    source: "IT IDOL Technologies",
-    color: "bg-cyan-400",
+    dotColor: "cyan",
   },
   {
-    name: "Python (Language)",
+    name: "Python",
     category: ["cloud", "backend"],
     detail: "Async, Scripting & Pipelines",
-    source: "Core Focus",
-    color: "bg-emerald-400",
+    dotColor: "emerald",
   },
   {
     name: "FastAPI",
     category: ["cloud", "backend"],
     detail: "High-Throughput REST APIs",
-    source: "IT IDOL Technologies",
-    color: "bg-emerald-400",
+    dotColor: "emerald",
   },
   {
     name: "Docker",
     category: ["cloud", "tools"],
     detail: "Containerization & Microservices",
-    source: "IT IDOL Technologies",
-    color: "bg-cyan-400",
+    dotColor: "cyan",
   },
   {
     name: "n8n",
     category: ["cloud", "tools"],
     detail: "Workflow Automation & Webhooks",
-    source: "IT IDOL Technologies",
-    color: "bg-pink-400",
+    dotColor: "purple",
   },
   {
     name: "GitHub",
     category: ["cloud", "tools"],
     detail: "Version Control, PRs & CI/CD",
-    source: "IT IDOL Technologies",
-    color: "bg-slate-300",
+    dotColor: "indigo",
   },
 
   // Backend & APIs
@@ -163,43 +144,37 @@ export const SKILLS_DATA: Skill[] = [
     name: "Drupal",
     category: ["backend", "tools"],
     detail: "Decoupled Multisite & Custom APIs",
-    source: "IT IDOL Technologies",
-    color: "bg-indigo-400",
+    dotColor: "indigo",
   },
   {
     name: "Next.js & Decoupled",
     category: ["frontend", "backend"],
     detail: "JSON:API & SSR Client Integration",
-    source: "IT IDOL Technologies",
-    color: "bg-cyan-400",
+    dotColor: "cyan",
   },
   {
     name: "Node.js",
     category: ["backend"],
     detail: "Server Runtimes & Backend Tooling",
-    source: "IT IDOL Technologies",
-    color: "bg-indigo-400",
+    dotColor: "indigo",
   },
   {
     name: "PHP",
     category: ["backend"],
     detail: "Backend Logic & Twig Templating",
-    source: "IT IDOL & GTU",
-    color: "bg-indigo-400",
+    dotColor: "indigo",
   },
   {
     name: "SQL",
     category: ["cloud", "backend"],
     detail: "Queries, Normalization & Indexes",
-    source: "IT IDOL & GTU",
-    color: "bg-amber-400",
+    dotColor: "amber",
   },
   {
-    name: "C (Language)",
+    name: "C",
     category: ["backend"],
     detail: "Data Structures & Low-Level Core",
-    source: "GTU (B.E.)",
-    color: "bg-amber-400",
+    dotColor: "amber",
   },
 
   // Frontend & UI
@@ -207,50 +182,43 @@ export const SKILLS_DATA: Skill[] = [
     name: "React.js",
     category: ["frontend"],
     detail: "Components, Hooks & Embedded Apps",
-    source: "IT IDOL Technologies",
-    color: "bg-blue-400",
+    dotColor: "blue",
   },
   {
     name: "JavaScript (ES6+)",
     category: ["frontend"],
     detail: "Async, DOM Manipulation & APIs",
-    source: "IT IDOL & GTU",
-    color: "bg-blue-400",
+    dotColor: "blue",
   },
   {
     name: "Tailwind CSS",
     category: ["frontend"],
     detail: "Modern Utility-First Design",
-    source: "IT IDOL Technologies",
-    color: "bg-blue-400",
+    dotColor: "blue",
   },
   {
     name: "HTML5",
     category: ["frontend"],
     detail: "Semantic Web Architecture",
-    source: "IT IDOL & GTU",
-    color: "bg-blue-400",
+    dotColor: "blue",
   },
   {
     name: "CSS3",
     category: ["frontend"],
     detail: "Responsive Flexbox & Grid Systems",
-    source: "IT IDOL & GTU",
-    color: "bg-blue-400",
+    dotColor: "blue",
   },
   {
     name: "Bootstrap",
     category: ["frontend"],
     detail: "Responsive Component Framework",
-    source: "IT IDOL Technologies",
-    color: "bg-purple-400",
+    dotColor: "purple",
   },
   {
     name: "jQuery",
     category: ["frontend"],
     detail: "Client-Side Scripting & DOM",
-    source: "IT IDOL Technologies",
-    color: "bg-blue-300",
+    dotColor: "blue",
   },
 
   // Tools, CMS & Automation
@@ -258,22 +226,19 @@ export const SKILLS_DATA: Skill[] = [
     name: "WordPress",
     category: ["backend", "tools"],
     detail: "Custom Themes & Architecture",
-    source: "IT IDOL Technologies",
-    color: "bg-purple-400",
+    dotColor: "purple",
   },
   {
     name: "Elementor",
     category: ["frontend", "tools"],
     detail: "Visual CMS Page Builder",
-    source: "IT IDOL Technologies",
-    color: "bg-pink-400",
+    dotColor: "purple",
   },
   {
     name: "Jira",
     category: ["tools"],
     detail: "Agile Sprints & Issue Tracking",
-    source: "IT IDOL Technologies",
-    color: "bg-blue-400",
+    dotColor: "blue",
   },
 ];
 
@@ -282,7 +247,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: "Software Engineer",
     company: "IT IDOL Technologies",
     location: "Valsad, Gujarat, India",
-    period: "May 2025 — Present (1 yr 7 mos)",
+    period: "May 2025 — Present",
     description:
       "Leading engineering on an interactive calculator engine and dynamic self-guided learning modules. Structured content and step configurations in Drupal; implemented Twig-based rendering for multi-step wizard flows with editable result screens, linked content references, and progress persistence. Built custom Drupal API layer for dynamic input handling, completion tracking, admin reporting, and created the Drupal-side React integration module to serve and embed React applications smoothly.",
     tags: [
@@ -297,7 +262,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: "Associate Software Engineer",
     company: "IT IDOL Technologies",
     location: "Valsad, Gujarat, India",
-    period: "May 2024 — April 2025 (1 year)",
+    period: "May 2024 — April 2025",
     description:
       "Maintained a production Drupal multisite platform built on a shared codebase supporting distinct site experiences. Handled CMS architecture, reusable content modeling (Paragraphs, taxonomies, Views), and contributed custom modules, Twig overrides, and REST/JSON endpoints. Engineered a headless backend exposing structured data through JSON:API, Search API with autocomplete, and custom article like/feedback modules for Next.js consumers.",
     tags: [
@@ -310,7 +275,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
     role: "Software Engineering Intern",
     company: "IT IDOL Technologies",
-    period: "Jan 2024 — April 2024 (4 months)",
+    period: "Jan 2024 — April 2024",
     description:
       "Built strong foundation in frontend and web engineering: HTML5, CSS3, JavaScript, jQuery, responsive UI systems, component-based frontend principles with React, and backend basics in Node.js.",
   },

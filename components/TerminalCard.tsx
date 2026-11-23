@@ -7,7 +7,7 @@ export default function TerminalCard() {
   return (
     <SpotlightCard
       tilt={true}
-      className="rounded-3xl p-7 w-full max-w-sm relative overflow-hidden border-slate-700/60 shadow-2xl transition-transform duration-200"
+      className="rounded-3xl p-5 sm:p-7 w-full max-w-sm relative overflow-hidden border-slate-700/60 shadow-2xl transition-transform duration-200"
     >
       {/* Terminal Title Bar */}
       <div className="flex items-center justify-between pb-4 border-b border-slate-800 text-xs font-mono text-slate-400">

@@ -40,10 +40,17 @@ export const metadata: Metadata = {
     title: "Kevin Thakor — Software Engineer & GCP Certified Cloud Specialist",
     description:
       "Software Engineer specializing in scalable web architectures, decoupled enterprise CMS, and modern cloud data solutions on Google Cloud.",
-    url: "https://kevinthakor.dev",
     siteName: "Kevin Thakor Portfolio",
     locale: "en_US",
     type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
   },
 };
 

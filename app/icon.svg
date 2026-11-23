@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Obsidian dark base -->
+  <rect width="32" height="32" rx="7" fill="#070b12"/>
+  
+  <!-- Vibrant glowing border -->
+  <rect x="1" y="1" width="30" height="30" rx="6" fill="none" stroke="url(#brandGrad)" stroke-width="1.5" stroke-opacity="0.9"/>
+  
+  <!-- Subtle inner ambient tint -->
+  <rect x="2" y="2" width="28" height="28" rx="5" fill="url(#brandGrad)" fill-opacity="0.12"/>
+  
+  <!-- Letter K (Pure Vector) -->
+  <rect x="6" y="9" width="2.5" height="14" rx="0.5" fill="#ffffff"/>
+  <polygon points="7.5,16.5 13.5,9.5 16,9.5 9.5,16.5" fill="#ffffff"/>
+  <polygon points="8,15.5 14,23 16.5,23 10,15.5" fill="#ffffff"/>
+  
+  <!-- Letter T (Pure Vector) -->
+  <rect x="17" y="9" width="10" height="2.5" rx="0.5" fill="#ffffff"/>
+  <rect x="20.75" y="11.5" width="2.5" height="11.5" rx="0.5" fill="#ffffff"/>
+  
+  <!-- Active pulse cyan dot -->
+  <circle cx="25.5" cy="6.5" r="1.8" fill="#38bdf8"/>
+</svg>
