@@ -1,0 +1,16 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "lint": {
+      "tags": ["ci"]
+    },
+    "typecheck": {
+      "tags": ["ci"]
+    }
+  }
+}
