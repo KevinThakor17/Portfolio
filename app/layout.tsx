@@ -15,6 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kevinthakor.vercel.app"),
   title: "Kevin Thakor — Software Engineer & GCP Certified Cloud Specialist",
   description:
     "Portfolio of Kevin Thakor, Software Engineer specializing in scalable web architectures, headless CMS, Python, FastAPI, and GCP Cloud Data Engineering.",
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
     title: "Kevin Thakor — Software Engineer & GCP Certified Cloud Specialist",
     description:
       "Software Engineer specializing in scalable web architectures, decoupled enterprise CMS, and modern cloud data solutions on Google Cloud.",
+    url: "https://kevinthakor.vercel.app",
     siteName: "Kevin Thakor Portfolio",
     locale: "en_US",
     type: "website",

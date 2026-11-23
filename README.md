@@ -1,5 +1,6 @@
 # Kevin Thakor — Personal Portfolio Website
 
+[![Live Site](https://img.shields.io/badge/Live_Site-kevinthakor.vercel.app-00dfd8?style=for-the-badge&logo=vercel&logoColor=white)](https://kevinthakor.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-14%2F15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
